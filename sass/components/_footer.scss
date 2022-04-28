@@ -1,0 +1,140 @@
+.footer {
+    background-color: var(--secondary-font-color);
+    padding-top: 60px;
+    padding-bottom: 60px;
+    }
+
+.footer-container {
+
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        align-items: baseline;
+    }
+}
+
+.left-part {
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+        justify-content: space-around;
+    }
+    @media screen and (min-width: 1200px) {
+        align-items: baseline;
+    }
+}
+
+.footer-contacts-part {
+    text-align: center;
+
+    @media screen and (min-width: 768px) {
+        display: inline-block;
+        margin-right: 165px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        flex-grow: 1;
+        margin-right: 70px;
+    }
+}
+
+.social-part {
+    margin-bottom: 60px;
+
+    @media screen and (max-width: 1199px) {
+        text-align: center;
+    }
+
+    @media screen and (min-width: 768px) {
+        display: inline-block;
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin-right: 93px;
+    }
+}
+
+.footer-logo {
+    display: block;
+    margin-bottom: 20px;
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.08;
+    letter-spacing: 0.03em;
+    color: var(--secondary-text-color);
+
+    @media screen and (min-width: 1200px) {
+        font-size: 26px;
+        line-height: 1.19;
+    }
+}
+
+.logo-accent-footer {
+    color: #ffffff;
+}
+
+.address {
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+
+.address-list-location {
+    color: #ffffff;
+}
+
+.address-list-item:not(:last-child) {
+    margin-bottom: 8px;
+
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 9px;
+    }
+}
+
+.address-list-item:last-child {
+    margin-bottom: 60px;
+}
+
+.social-title {
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.social-list {
+    display: inline-flex;
+    align-items: center;
+}
+
+.social-list-item:not(:last-child) {
+    margin-right: 10px;
+}
+
+.social-link {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    justify-content: space-around;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+
+    transition: background-color var(--timing-duration) var(--timing-function);
+
+    &:hover,
+    &:focus {
+        background-color: var(--accent-color);
+    }
+}
+
+.footer-icon {
+    fill: #ffffff;
+}
