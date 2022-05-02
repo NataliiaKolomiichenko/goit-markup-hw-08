@@ -29,11 +29,7 @@
             color: var(--accent-color);
         }
         
-        @media screen and (min-width: 1200px) {
-            &:first-child {
-                margin-right: 30px;
-            }
-        }
+        
     }
 
     .contact-icon {
@@ -48,12 +44,21 @@
         
 }
 
+.contact__item {
+    @media screen and (max-width: 1199px) {
+        &:not(:last-child) {
+           margin-bottom: 10px;
+        }
+}
 
-@media screen and (max-width: 1199px) {
-    .contact__item:not(:last-child) {
-        margin-bottom: 10px;
+    @media screen and (min-width: 1200px) {
+        &:first-child {
+           margin-right: 30px;
+        }
     }
 }
+
+
 
 @media screen and (min-width: 1200px) {
     .contacts {
