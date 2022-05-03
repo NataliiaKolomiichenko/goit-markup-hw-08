@@ -281,7 +281,7 @@ img {
 @media screen and (min-width: 768px) {
   .left-part {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: baseline;
     flex-grow: 1;
   }
@@ -320,6 +320,12 @@ img {
 @media screen and (min-width: 768px) {
   .social-part {
     display: inline-block;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .social-part {
+    margin-right: 93px;
   }
 }
 
